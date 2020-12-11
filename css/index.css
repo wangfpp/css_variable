@@ -1,0 +1,150 @@
+body,html{
+    background: var(--background);
+    width: 100%;
+    height: 100%;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    color: var(--color);
+}
+#root>header{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: var(--header-bg);
+}
+#change_theme ol{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+#change_theme ol li {
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+#change_theme ol li.active{
+    border: 2px solid #fff;
+}
+#change_theme ol li:nth-of-type(1) {
+    background-color: rgb(24, 144, 255);
+}
+#change_theme ol li:nth-of-type(2) {
+    background-color: rgb(250, 84, 28);
+}
+#change_theme ol li:nth-of-type(3) {
+    background-color: rgb(19, 194, 194);
+}
+.left,.right{
+    color: var(--text-color, --pre_color)
+}
+#container {
+    height: calc(100% - 40px);
+    width: 100%;
+    background-color: var(--background);
+}
+#container>div{
+    height: 100%;
+}
+#container .left{
+    float: left;
+    width: 150px;
+    border-right: 1px solid #fff;
+}
+#container .left .menu, #container .left .menu ul{
+    width: 100%;
+    height: 100%;
+    background-color: var(--menu-bg);
+}
+#container .left .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container .left .menu ul li {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: var(--menu-text-color);
+}
+#container .left .menu ul li.active {
+    color: var(--menu-active-color);
+}
+#container .left .menu ul li:not(:first-child) {
+    border-top: 1px solid #eee;
+}
+#container .left div {
+    color: var(--color);
+}
+
+#container .right{
+    float: right;
+    width: calc(100% - 151px);
+}
+
+/* css变量的作用域和var的参数 */
+#container .right .params{
+    --scolor:aquamarine ;
+    color: var(--scolor);
+}
+#container .right .params code{
+    color: var(--scolor);
+}
+
+
+
+
+
+#interhit .parent_par{
+    --p_color: #f00;
+    color: var(--p_color);
+}
+
+#interhit .parent_par .parent {
+    --p_color: blue;
+    color: var(--p_color);
+}
+
+#interhit .parent_par .parent .one{
+    --p_color: green;
+    color: var(--p_color);
+}
+
+#interhit .parent_par .parent .one .title{
+    color: var(--p_color);
+}
+
+#interhit .parent_par .parent .two{
+    color: var(--p_color);
+}
+
+#interhit .parent_par .parent .three{
+    color: var(--p_color);
+}
+
+
+/* css变量备用值 */
+#fallback{
+    --color: tomato;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    /* background-color: var(--a, var(--color));  */
+    /* background-color: var(--acolor, #000); */
+    /* background-color: var(--acolor, --color); */
+}

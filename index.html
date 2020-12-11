@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css变量学习</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/css_variable.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/css_variable.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="product_name">学习css变量</div>
+            <div id="change_theme">
+                <ol>
+                    <li class="change_theme_item active" color="red"></li>
+                    <li class="change_theme_item" color="blue"></li>
+                    <li class="change_theme_item" color="green"></li>
+                </ol>
+            </div>
+        </header>
+        <div id="container">
+            <div class="left">
+                <div class="menu">
+                    <ul>
+                        <li class="menu_item active">首页</li>
+                        <li class="menu_item">用户管理</li>
+                        <li class="menu_item">系统设置</li>
+                        <li class="menu_item">个人中心</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="params">
+                    作用域的效果
+                    <code>var()的作用域</code>
+                </div>
+                <hr/>
+                <div id="interhit">
+                    css变量的继承
+                    <div class="parent_par">
+                        根节点
+                        <div class="parent">
+                            父节点
+                            <div class="one">
+                                第一个
+                                <div class="title">title</div>
+                            </div>
+                            <div class="two">第二个</div>
+                            <div class="three">第三个个</div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div id="fallback">
+                    CSS变量的备用值
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
