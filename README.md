@@ -118,3 +118,7 @@ Element.style.setProperty("--my-color", "blue");
 
 ### css变量的应用
 CSS变量可以在控制变量和不修改css的基础上使换肤得以实现,JS控制换肤事件动态切换Document的CSS变量
+
+### 换肤效果
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c16313f038d3433c874736931870a5a8~tplv-k3u1fbpfcp-watermark.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1f75e1ab651849559550c30aac31a6f3~tplv-k3u1fbpfcp-watermark.image)
