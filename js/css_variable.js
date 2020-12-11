@@ -13,7 +13,7 @@ const cssVariable = {
         "--background": "rgb(24, 144, 255)",
         "--header-bg": "rgba(0,0,0,0.7)",
         "--text-color": "#000",
-        "--menu-bg": "rgba(255, 255, 255, 1)",
+        "--menu-bg": "#13c2c2",
         "--menu-text-color": "#000",
         "--menu-active-color": "#2dabf4"
     },
@@ -22,7 +22,7 @@ const cssVariable = {
         "--background": "rgb(250, 84, 28)",
         "--header-bg": "#001529",
         "--text-color": "#0f0",
-        "--menu-bg": "rgba(255, 255, 255, 1)",
+        "--menu-bg": "#73d13d",
         "--menu-text-color": "tomato",
         "--menu-active-color": "#2dabf4"
     },
@@ -31,7 +31,7 @@ const cssVariable = {
         "--background": "rgb(19, 194, 194)",
         "--header-bg": "#722ed1",
         "--text-color": "#f00",
-        "--menu-bg": "rgba(255, 255, 255, 1)",
+        "--menu-bg": "#ff85c0",
         "--menu-text-color": "green",
         "--menu-active-color": "#2dabf4"
     }
